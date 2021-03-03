@@ -1,0 +1,47 @@
+<!DOCTYPE html><html>
+<head><title>Puissance 4</title><style>
+body{text-align: center;position: absolute;left: 50%;transform: translate(-50%, 0%);}
+table {font-family: arial, sans-serif;border-collapse: collapse;}
+td, th {border: 1px solid #dddddd;text-align: center;padding: 8px;}
+tr:nth-child(even) {background-color: #dddddd;}
+</style></head><body>
+<h2>You are player P</h2>It is (not) your turn<br><br>
+<table><tr style="background: red">
+<th><a href=/P/0>\/</a></th><th><a href=/P/1>\/</a></th>
+<th><a href=/P/2>\/</a></th><th><a href=/P/3>\/</a></th>
+<th><a href=/P/4>\/</a></th><th><a href=/P/5>\/</a></th>
+<th><a href=/P/6>\/</a></th>
+
+</tr><tr>
+	<td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr><tr>
+	<td></td><td></td><td></td>
+	<td></td><td></td><td></td>
+	<td></td>
+</tr><tr>
+	<td></td><td></td><td></td>
+	<td></td><td></td><td></td>
+	<td></td>
+</tr><tr>
+	<td></td><td></td><td></td>
+	<td></td><td></td><td></td>
+	<td></td>
+</tr><tr>
+	<td>O</td><td></td><td></td>
+	<td></td><td></td><td></td>
+	<td></td>
+</tr><tr>
+	<td>X</td><td>X</td><td></td>
+	<td></td><td></td><td></td>
+	<td>O</td>
+</tr></table>
+
+<br><a href=/reboot>Restart</a>
+
+<script>
+	setInterval(func, 3000);
+	function func(){
+		document.location='page.html';
+	}
+</script>
+</body></html>
