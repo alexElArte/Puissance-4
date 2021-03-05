@@ -142,18 +142,15 @@ void loop() {
     Serial.println("Denied");
   }
 
-  // Envoie la page html au joueur
-
   if (req.indexOf("GET") != -1) {
     if (req.indexOf("/data") != -1) {
-      send_data(turn, client);
+       // Envoie seulement les données et non toute la page
+       send_data(turn, client);
     } else {
+      // Envoie la page html au joueur
       html(player, client);
     }
   }
 
-
   Serial.println("\n");
-
-
 }
